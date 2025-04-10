@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #f2f3f5;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  font-size: 18px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav li:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+.content {
+  margin-left: 270px;
+  width: 100%;
+  padding: 60px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.search-box button {
+  background: #007bff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.search-box button:hover {
+  background: #0056b3;
+}
+
+.loading {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Search Results */
+.results {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-card {
+  width: 60%;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.result-card h3 {
+  font-size: 20px;
+}
+
+.result-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.result-card a {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.result-card a:hover {
+  text-decoration: underline;
+}
